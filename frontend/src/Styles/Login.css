@@ -1,0 +1,31 @@
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.auth-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.auth-options input {
+  accent-color: #4caf50;
+}
+
+.auth-options a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}

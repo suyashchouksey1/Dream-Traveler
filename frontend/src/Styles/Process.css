@@ -1,0 +1,77 @@
+.process-section {
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.process-header {
+  margin-bottom: 60px;
+}
+
+.process-tag {
+  color: #7fb401;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.process-header h2 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+/* GRID */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD */
+.process-card {
+  border: 2px solid #ffc107;
+  padding: 50px 30px 35px;
+  border-radius: 6px;
+  position: relative;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ICON */
+.process-icon {
+  width: 80px;
+  height: 80px;
+  background: #ffc107;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXT */
+.process-card h4 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.process-card p {
+  margin-top: 12px;
+  color: #6c757d;
+  line-height: 1.6;
+}

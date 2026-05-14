@@ -1,0 +1,84 @@
+.guide-section {
+    padding: 0px 80px;
+    padding-top: 19px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.guide-subtitle {
+    color: #ffc107;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.guide-header h2 {
+    font-size: 40px;
+    margin-top: 5px;
+    color: #2c3e50;
+}
+
+.guide-grid {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.guide-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    height: 95%;
+}
+
+.guide-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.guide-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* SOCIALS */
+.guide-socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -20px;
+}
+
+.guide-socials span {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 36px;
+    color: #7ab730;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* INFO */
+.guide-info {
+    padding: 20px;
+}
+
+.guide-info h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.guide-info p {
+    margin-top: 5px;
+    color: #7f8c8d;
+    font-size: 14px;
+}

@@ -1,0 +1,126 @@
+.footer {
+    /* min-height: 100vh; */
+    background: #fff;
+    padding: 120px 100px 0px 100px;
+    /* padding-bottom: -100px; */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+/* HEADINGS */
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* COMPANY LIST */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.footer-col li:hover {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-col p:hover {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* CONTACT */
+.footer-col p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icons span {
+    width: 36px;
+    height: 36px;
+    /* border: 1px solid #fff; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    background: #ffc107;
+}
+
+/* GALLERY */
+.footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.footer-gallery img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    margin-top: 15px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.newsletter button {
+    margin-left: 50px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #000;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.footer-bottom span {
+    color: #ffc107;
+}

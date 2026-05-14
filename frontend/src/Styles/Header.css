@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    height: 50px;
+    color: white;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+span {
+    margin-right: 20px;
+}
+
+.gmail {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-circles {
+    margin-left: auto;
+    margin-right: 55px;
+    display: flex;
+    gap: 12px;
+}
+
+.nav-a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.nav-a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-a i {
+    text-align: center;
+    padding-top: 5px;
+    width: 100%;
+}

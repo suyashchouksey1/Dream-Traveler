@@ -1,0 +1,128 @@
+.booking-section {
+    padding: 11.1px 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/booking.jpg") center/cover no-repeat;
+    color: white;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LEFT */
+.booking-subtitle {
+    color: #ffc107;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.booking-title {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.booking-text {
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+.booking-list,
+.booking-benefits {
+    line-height: 1.5;
+}
+
+.booking-read-btn {
+    margin-top: 20px;
+    padding: 10px 24px;
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.booking-read-a {
+    color: white;
+}
+
+/* RIGHT FORM */
+.booking-form {
+    height: 98%;
+    margin: 0 -50px 0 50px;
+    padding: 0px 30px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    height: 28.7px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    color: white;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    height: 41.5px;
+}
+
+.form-row input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+.to {
+    margin-top: 20px;
+}
+
+option {
+    background-color: #000;
+}
+
+textarea {
+    height: 120px;
+    width: 95%;
+    resize: none;
+}
+
+.booking-btn {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.success-msg {
+    color: #28a745;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    margin-top: -10px;
+    font-size: 20px;
+}
