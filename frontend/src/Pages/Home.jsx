@@ -13,7 +13,7 @@ const Home = () => {
             className="search-btn"
             onClick={() => (window.location.href = "/packages")}
           >
-            Sea
+            Search
           </button>
         </div>
 
