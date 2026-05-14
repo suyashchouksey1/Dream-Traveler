@@ -1,0 +1,153 @@
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 992px) {
+
+    .packages-grid,
+    .guide-grid,
+    .services-grid,
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-container,
+    .about-container,
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .booking-form,
+    .booking-info {
+        width: 100%;
+    }
+
+    .navbar-links {
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .main-navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-title {
+        font-size: 28px;
+    }
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        text-align: center;
+    }
+
+    /* Search Bar */
+    .search-bar {
+        width: 95%;
+    }
+
+    /* Sections */
+    .packages-grid,
+    .guide-grid,
+    .services-grid,
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Booking */
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input,
+    .form-row select {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Guide cards */
+    .guide-card img {
+        width: 100%;
+    }
+
+    /* Package cards */
+    .package-card {
+        width: 100%;
+    }
+
+    /* Destination images */
+    .destination-card img {
+        height: auto;
+    }
+
+    /* Buttons */
+    button {
+        width: auto;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+
+    .navbar-title {
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .destination-title,
+    .packages-title,
+    .guide-title,
+    .service-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .booking-title {
+        font-size: 30px;
+    }
+
+    .package-price {
+        font-size: 22px;
+    }
+}
