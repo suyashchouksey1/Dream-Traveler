@@ -1,153 +1,177 @@
-/* =========================
-   TABLET
-========================= */
+/* ================= GLOBAL ================= */
 
-@media screen and (max-width: 992px) {
-
-    .packages-grid,
-    .guide-grid,
-    .services-grid,
-    .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .booking-container,
-    .about-container,
-    .footer-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .booking-form,
-    .booking-info {
-        width: 100%;
-    }
-
-    .navbar-links {
-        gap: 10px;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media screen and (max-width: 768px) {
-
-    /* Navbar */
-    .main-navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .navbar-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .navbar-title {
-        font-size: 28px;
-    }
-
-    /* Hero */
-    .hero-content h1 {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .hero-content p {
-        text-align: center;
-    }
-
-    /* Search Bar */
-    .search-bar {
-        width: 95%;
-    }
-
-    /* Sections */
-    .packages-grid,
-    .guide-grid,
-    .services-grid,
-    .destination-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Booking */
-    .booking-container {
-        flex-direction: column;
-    }
-
-    .form-row {
-        flex-direction: column;
-    }
-
-    .form-row input,
-    .form-row select {
-        width: 100%;
-    }
-
-    textarea {
-        width: 100%;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* Guide cards */
-    .guide-card img {
-        width: 100%;
-    }
-
-    /* Package cards */
-    .package-card {
-        width: 100%;
-    }
-
-    /* Destination images */
-    .destination-card img {
-        height: auto;
-    }
-
-    /* Buttons */
-    button {
-        width: auto;
-    }
+html,
+body{
+  overflow-x: hidden;
+  width: 100%;
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* ================= MOBILE ================= */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px){
 
-    .navbar-title {
-        font-size: 24px;
-    }
+  /* ===== TOPBAR ===== */
 
-    .hero-content h1 {
-        font-size: 28px;
-    }
+  .topbar{
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
 
-    .destination-title,
-    .packages-title,
-    .guide-title,
-    .service-title {
-        font-size: 32px;
-        text-align: center;
-    }
+  /* ===== NAVBAR ===== */
 
-    .booking-title {
-        font-size: 30px;
-    }
+  .main-navbar{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 15px;
+  }
 
-    .package-price {
-        font-size: 22px;
-    }
+  .navbar-title{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .navbar-links{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .NavLink{
+    font-size: 1rem;
+  }
+
+  .register{
+    padding: 10px 20px;
+  }
+
+  /* ===== HERO ===== */
+
+  .hero{
+    height: auto;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  .hero-content h1{
+    font-size: 2.2rem;
+  }
+
+  .hero-content p{
+    font-size: 1rem;
+  }
+
+  .hero-search{
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .hero-search input{
+    width: 100%;
+  }
+
+  .hero-search button{
+    width: 100%;
+  }
+
+  /* ===== ABOUT ===== */
+
+  .about-container{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* ===== SERVICES ===== */
+
+  .services-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== DESTINATION ===== */
+
+  .destination-grid{
+    flex-direction: column;
+  }
+
+  .destination-bottom{
+    flex-direction: column;
+  }
+
+  /* ===== PACKAGES ===== */
+
+  .packages-grid{
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .package-card{
+    width: 100%;
+  }
+
+  /* ===== BOOKING ===== */
+
+  .booking-container{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .booking-form{
+    width: 100%;
+  }
+
+  .form-row{
+    flex-direction: column;
+  }
+
+  .form-row input,
+  .form-row select{
+    width: 100%;
+  }
+
+  /* ===== PROCESS ===== */
+
+  .process-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ===== GUIDE ===== */
+
+  .guide-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .footer-container{
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .footer-gallery{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* ===== LOGIN / REGISTER ===== */
+
+  .auth-box{
+    width: 95%;
+    padding: 25px;
+  }
+
 }
