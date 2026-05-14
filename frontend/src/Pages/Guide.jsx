@@ -1,6 +1,6 @@
 import "../Styles/Guide.css";
 import GuideCard from "../Components/GuideCard";
-import guides from "../data/guidesData";
+import guides from "../Data/guidesData";
 
 const Guide = () => {
   return (
