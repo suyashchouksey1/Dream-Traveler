@@ -9,7 +9,7 @@ const guides = [
         id: 2,
         image: "/img/amisha.jpg",
         name: "Amisha Patel",
-        role: "Senior Guide",
+        role: "Tour Planner",
     },
     {
         id: 3,
