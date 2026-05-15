@@ -53,13 +53,14 @@
 }
 
 .package-body {
-    margin-top: -5px;
-    padding: 0px 70px;
+    margin-top: 0;
+    padding: 20px 25px;
     text-align: center;
 }
 
 .package-price {
-    font-size: 20px;
+    font-size: 36px;
+    margin: 10px 0;
 }
 
 .package-stars {

@@ -22,6 +22,7 @@
 
 /* ===== GRID ===== */
 .destination-grid {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 25px;

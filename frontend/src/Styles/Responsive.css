@@ -492,3 +492,73 @@ img{
   }
 
 }
+
+/* ================= DESKTOP FIXES ================= */
+
+@media (min-width: 769px){
+
+  /* GUIDE SECTION FIX */
+
+  .guide-section{
+    padding: 20px 80px;
+  }
+
+  .guide-grid{
+    align-items: stretch;
+  }
+
+  .guide-card{
+    height: auto;
+  }
+
+  /* LOGIN / REGISTER FIX */
+
+  .auth-wrapper{
+    padding: 40px 20px;
+  }
+
+  .auth-box{
+    padding: 35px 32px;
+  }
+
+  /* PACKAGE FIX */
+
+  .package-card{
+    overflow: hidden;
+  }
+
+  .package-body{
+    padding: 15px 25px;
+  }
+
+  .package-price{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .package-desc{
+    min-height: 60px;
+  }
+
+  .actions-Btn{
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .read-btn,
+  .book-btn{
+    margin: 15px 0;
+  }
+
+  /* SERVICES FIX */
+
+  .services-grid{
+    align-items: stretch;
+  }
+
+  .service-card{
+    height: 100%;
+  }
+
+}
