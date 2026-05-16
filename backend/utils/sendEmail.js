@@ -27,13 +27,62 @@
 
 // export default sendEmail;
 
+
+
+// import nodemailer from "nodemailer";
+
+// const sendEmail = async ({ to, subject, html }) => {
+//   try {
+
+//     const transporter = nodemailer.createTransport({
+//       service: "gmail",
+
+//       auth: {
+//         user: process.env.EMAIL_USER,
+//         pass: process.env.EMAIL_PASS,
+//       },
+//     });
+
+//     // VERIFY CONNECTION
+
+//     await transporter.verify();
+
+//     console.log("SMTP Server Ready");
+
+//     const mailOptions = {
+//       from: process.env.EMAIL_USER,
+//       to,
+//       subject,
+//       html,
+//     };
+
+//     const info = await transporter.sendMail(mailOptions);
+
+//     console.log("EMAIL SENT:", info.response);
+
+//   } catch (error) {
+
+//     console.log("SEND EMAIL ERROR:", error);
+
+//     throw error;
+//   }
+// };
+
+// export default sendEmail;
+
+
 import nodemailer from "nodemailer";
 
 const sendEmail = async ({ to, subject, html }) => {
   try {
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+
+      host: "smtp.gmail.com",
+
+      port: 587,
+
+      secure: false,
 
       auth: {
         user: process.env.EMAIL_USER,
@@ -41,11 +90,13 @@ const sendEmail = async ({ to, subject, html }) => {
       },
     });
 
-    // VERIFY CONNECTION
+    // Verify transporter
 
     await transporter.verify();
 
     console.log("SMTP Server Ready");
+
+    // Mail options
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
@@ -53,6 +104,8 @@ const sendEmail = async ({ to, subject, html }) => {
       subject,
       html,
     };
+
+    // Send mail
 
     const info = await transporter.sendMail(mailOptions);
 
