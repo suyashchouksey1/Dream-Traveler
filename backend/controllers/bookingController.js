@@ -276,3 +276,26 @@ export const createBooking = async (req, res) => {
     });
   }
 };
+
+export const getBookings = async (req, res) => {
+  try {
+
+    const bookings = await Booking.find().sort({
+      createdAt: -1,
+    });
+
+    res.status(200).json({
+      success: true,
+      bookings,
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch bookings",
+    });
+  }
+};
