@@ -125,38 +125,48 @@
 // export default sendEmail;
 
 
-
-
-import nodemailer from "nodemailer";
+import axios from "axios";
 
 const sendEmail = async ({ to, subject, html }) => {
   try {
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp-relay.brevo.com",
-      port: 587,
-      secure: false,
+    const response = await axios.post(
+      "https://api.brevo.com/v3/smtp/email",
 
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+      {
+        sender: {
+          name: "Dream Traveler",
+          email: "everydayadventureyt18@gmail.com",
+        },
+
+        to: [
+          {
+            email: to,
+          },
+        ],
+
+        subject,
+
+        htmlContent: html,
       },
-    });
 
-    const mailOptions = {
-      from: `"Dream Traveler" <${process.env.EMAIL_USER}>`,
-      to,
-      subject,
-      html,
-    };
+      {
+        headers: {
+          accept: "application/json",
+          "api-key": process.env.BREVO_API_KEY,
+          "content-type": "application/json",
+        },
+      }
+    );
 
-    const info = await transporter.sendMail(mailOptions);
-
-    console.log("EMAIL SENT:", info.messageId);
+    console.log("EMAIL SENT:", response.data);
 
   } catch (error) {
 
-    console.log("SEND EMAIL ERROR:", error);
+    console.log(
+      "SEND EMAIL ERROR:",
+      error.response?.data || error.message
+    );
 
     throw error;
   }
